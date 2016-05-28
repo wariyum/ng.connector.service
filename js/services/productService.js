@@ -9,7 +9,7 @@
      * Service of the app
      */
 
-    angular.module('connector')
+    angular.module('wrConnector')
         .service('productService', productService);
 
     productService.$inject = ['$http','appService','appConstants','$state'];
