@@ -4,7 +4,10 @@
     "nazeels <nazeel.ak@gmail.com>"
   ],
   "description": "Wariyum-Connector service library for Angular ver 1.xx",
-  "main": "",
+   "main": [
+    "./js/app.js",
+    "./js/services/categoryService.js"
+  ],
   "keywords": [
     "Wariyum",
     "connector",
