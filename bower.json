@@ -6,7 +6,8 @@
   "description": "Wariyum-Connector service library for Angular ver 1.xx",
    "main": [
     "./js/app.js",
-    "./js/services/categoryService.js"
+    "./js/services/categoryService.js",
+    "./js/services/productService.js"
   ],
   "keywords": [
     "Wariyum",
