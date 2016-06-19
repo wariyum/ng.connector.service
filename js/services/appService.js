@@ -9,7 +9,7 @@
      * Service of the app
      */
 
-    angular.module('connector')
+    angular.module('wrConnector')
         .service('appService', appService);
 
     appService.$inject = ['appConstants'];

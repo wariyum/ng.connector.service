@@ -1,0 +1,7 @@
+{
+  "name": "ng.connector.services",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1"
+  }
+}
