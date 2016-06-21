@@ -22,7 +22,6 @@
         };
 
         function getProductsByCategoryId(categoryId) {
-
               if(appConstants.mode === 'dev')
                 return $http.get(appService.getUrl()+'products-by-categoryId.json');       
             else
