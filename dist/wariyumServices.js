@@ -105,11 +105,11 @@ var wrConnector = angular.module('wrConnector', []);;(function() {
     function productService($http,appService,appConstants,$state) {
         return {
             getProductsPublished: getProductsPublished,
-            getProductsByCategoryId: getProductsByCategoryId
+            getProductsByCategoryId: getProductsByCategoryId,
+            getProductDetailsPublished: getProductDetailsPublished
         };
 
         function getProductsByCategoryId(categoryId) {
-
               if(appConstants.mode === 'dev')
                 return $http.get(appService.getUrl()+'products-by-categoryId.json');       
             else
@@ -121,6 +121,13 @@ var wrConnector = angular.module('wrConnector', []);;(function() {
                 return $http.get(appService.getUrl()+'published-products.json');
             else
                 return $http.get(appService.getUrl() +'connector/'+ appConstants.prog_id + '/published');
+        }
+
+        function getProductDetailsPublished(productId) {
+            if(appConstants.mode === 'dev')
+                return $http.get(appService.getUrl()+'published-products.json');
+            else
+                return $http.get(appService.getUrl() +'connector/'+ appConstants.prog_id + '/product/' + productId);
         }
 
     }
